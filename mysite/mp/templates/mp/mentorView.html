@@ -1,0 +1,17 @@
+<h1> {{mentor.name}}</h1>
+
+{% for key,value in h %}
+	{% if value != "" %}
+		<b>{{key}}</b>
+		: {{value}}
+		<br>
+		<br>
+	{% endif %}
+{% endfor %}
+
+{% if mentor.photo != "" %}
+	<b>照片</b>: <a href={{mentor.photo}} target="_BLANK">Click Here</a>
+	<br>
+{% endif %}
+<br>
+<a href='/mp/all'>TO HOME</a>

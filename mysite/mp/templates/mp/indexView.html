@@ -1,0 +1,32 @@
+Welcome to 2015 MSN Mentor Program!
+<br>
+<a href="/mp/all/">See All Mentors</a>
+<br>
+or
+<br>
+Filter by Hometown
+<form action="/mp/home/" method="get">
+{% for h in home %}
+<input type="checkbox" name="{{h}}">{{h}}
+{% endfor %}
+<br>
+<input type="submit" value="GO">
+</form>
+
+Filter by Major
+<form action="/mp/major/" method="get">
+{% for m in major %}
+<input type="checkbox" name="{{m}}">{{m}}
+{% endfor %}
+<br>
+<input type="submit" value="GO">
+</form>
+
+Filter by Year
+<form action="/mp/year/" method="get">
+{% for y in year %}
+<input type="checkbox" name="{{y}}">{{y}}
+{% endfor %}
+<br>
+<input type="submit" value="GO">
+</form>

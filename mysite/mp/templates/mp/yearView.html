@@ -1,0 +1,26 @@
+List of all the Mentors of
+{% for x in year %}
+{{x}}
+{% endfor %}
+<br>
+<table border="1" >
+	<tr>
+		<th>名字</th>
+		<th>Email</th>
+		<th>年级</th>
+		<th>家乡</th>
+		<th>高中</th>
+		<th>专业</th>
+	</tr>
+	<tr>
+	{% for mentors in all_mentors %}
+		<td><a href="/mp/{{mentors.id}}">{{mentors.name}}</a></td>
+		<td>{{mentors.email}}</td>
+		<td>{{mentors.year}}</td>
+		<td>{{mentors.home}}</td>
+		<td>{{mentors.high}}</td>
+		<td>{{mentors.major}}</td>
+		</tr>
+	{% endfor %}
+	
+</table>
